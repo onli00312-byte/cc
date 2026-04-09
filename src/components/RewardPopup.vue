@@ -282,33 +282,31 @@ function closePopup() {
 }
 .popup-content.popup-reward {
   width: min(400px, 100%);
-  padding: 0;
-  border-radius: 34px;
+  padding: 0 !important;
+  margin: 0;
+  border-radius: 30px;
   overflow: hidden;
-  background: #f6f3f5;
+  background: #ffeef2; /* hồng siêu nhạt */
   text-align: center;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.28);
 }
 
 .popup-top {
   width: 100%;
-  padding: 0;
   margin: 0;
-  background: none;
+  padding: 0;
+  line-height: 0;
+  overflow: hidden;
 }
 
 .popup-top-img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  object-position: center;
   display: block;
+  width: 100%;
+  max-width: 100%;
+  height: 200px; /* chỉnh theo ý bạn */
+  object-fit: cover;
+  border-radius: 0;
 }
-
-.popup-body {
-  padding: 20px 22px 28px;
-}
-
 .popup-top::before,
 .popup-top::after {
   content: "";
@@ -350,7 +348,7 @@ function closePopup() {
 .popup-product-box {
   width: 144px;
   height: 144px;
-  margin: -16px auto 18px;
+  margin: 0 auto 18px;
   border-radius: 24px;
   background: linear-gradient(180deg, #fff7fa 0%, #fff4eb 100%);
   border: 1px solid rgba(255, 105, 145, 0.14);
@@ -366,7 +364,6 @@ function closePopup() {
   display: block;
   width: 100%;
   height: 100%;
-  border-radius: 12px;
   object-fit: contain;
   margin: 0 auto;
 }
